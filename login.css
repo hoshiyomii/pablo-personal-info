@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "itim", sans-serif;
+
+    background: #121212; 
+    background: linear-gradient(
+      135deg,
+      #fff0f0 25%,
+      #f9c4d2 25%,
+      #f9c4d2 50%,
+      #fff0f0 50%,
+      #fff0f0 75%,
+      #f9c4d2 75%,
+      #f9c4d2
+    );
+    background-size: 40px 40px; 
+
+    animation: move 4s linear infinite;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: #b89d53;
+    height:8vh;
+  }
+  .logo i {
+    font-size: 50px;
+    color: #fff;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+  }
+  .nav-items a {
+    color: #fff;
+    display: inline-block;
+    margin-left: 20px;
+    transition: 0.15s ease;
+  }
+  .nav-items a:hover {
+    color: rgb(211,211,211);
+  }
+  a.signUpBtn {
+    background: #000000;
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: 0.15s ease;
+  }
+  a.signUpBtn:hover {
+    color: #fff;
+    background: #3b3a38;
+  }
+  
+  .login {
+      width: 340px;
+      height: 450px;
+      padding: 47px;
+      padding-bottom: 57px;
+      color: black;
+      border-radius: 17px;
+      padding-bottom: 50px;
+      font-size: 1.3em;
+      font-family: "Itim", cursive;
+      margin-top: 10%;
+
+      background-color: #f9c4d2;
+      width: auto;
+      border: 2px solid #b18597;
+      border-radius: 20px;
+      box-shadow: 3px 4px 0px 1px #f9c4d2;
+
+      
+    }
+    
+    .login input[type="text"],
+    .login input[type="password"] {
+      opacity: 1;
+      display: block;
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 13px 18px;
+      margin: 20px 0 0 0;
+      font-size: 0.8em;
+      border-radius: 100px;
+      background: #dddddd;
+      color: #000000;
+    }
+    
+    .login input:focus {
+      animation: bounce 1s;
+      -webkit-appearance: none;
+    }
+    
+    .login input[type=submit],
+    .login input[type=button],
+    .h1 {
+      border: 0;
+      outline: 0;
+      width: 100%;
+      padding: 13px;
+      margin: 40px 0 0 0;
+      border-radius: 500px;
+      font-weight: 600;
+      animation: bounce2 1.6s;
+    }
+    
+    .h1 {
+      padding: 0;
+      position: relative;
+      top: -35px;
+      display: block;
+      margin-bottom: -0px;
+      font-size: 1.3em;
+      color: rgb(0, 0, 0);
+    }
+    
+    .btn {
+      background: #ff8cc9;
+      color: #fff;
+      padding: 16px !important;
+      margin-bottom: 20px;
+    }
+    
+    .btn:hover {
+      background: linear-gradient(144deg, #1e1e1e , 20%,#1e1e1e 50%,#1e1e1e );
+      color: rgb(255, 255, 255);
+      padding: 16px !important;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+    
+    .login input[type=text] {
+      animation: bounce 1s;
+      -webkit-appearance: none;
+    }
+    
+    .login input[type=password] {
+      animation: bounce1 1.3s;
+    }
+    
+    .ui {
+      font-weight: bolder;
+      background: -webkit-linear-gradient(#B563FF, #535EFC, #0EC8EE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 4px solid transparent;
+      border-image: linear-gradient(0.25turn, #535EFC, #0EC8EE, #0EC8EE);
+      border-image-slice: 1;
+      display: inline;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .login {
+        width: 70%;
+        padding: 3em;
+      }
+    }
+    
+    @keyframes bounce {
+      0% {
+        transform: translateY(-250px);
+        opacity: 0;
+      }
+    }
+    
+    @keyframes bounce1 {
+      0% {
+        opacity: 0;
+      }
+    
+      40% {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+    }
+    
+    @keyframes bounce2 {
+      0% {
+        opacity: 0;
+      }
+    
+      70% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+    }
+    @media all and (min-width: 800px){
+  
+        .main{
+          flex:3;
+        }
+      
+        .side-bar-1{
+          order: 1;
+        }
+      
+        .side-bar-2{
+          order: 2;
+        }
+      
+        .main{
+          order: 2;
+        }
+      
+        .footer{
+          order: 4;
+        }
+      
+      }
+      
+      @media all and (min-width: 600px){
+        .side{
+          flex: 1;
+        }
+      
+      }
+    
+      @keyframes move {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 40px 40px;
+        }
+      }
+
+    p.reg {
+      font-family: "Itim", cursive;
+      font-size: 18px;
+      color: rgb(0, 0, 0);
+      margin-top: 20px;
+  }
+  
+  a {
+      text-decoration: none;
+      color: rgb(209, 70, 251);
+      margin-top: 20px;
+  }
